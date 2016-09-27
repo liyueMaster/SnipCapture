@@ -97,7 +97,7 @@ const int kKEY_ESC_CODE = 53;
         [windowController.window orderOut:nil];
     }
     [self clearController];
-    NSLog(@"post endcapture:%@", kNotifyCaptureEnd);
+    //NSLog(@"post endcapture:%@", kNotifyCaptureEnd);
     [[NSNotificationCenter defaultCenter] postNotificationName:kNotifyCaptureEnd object:nil userInfo:image == nil ? nil : @{@"image" : image}];
 }
 @end
