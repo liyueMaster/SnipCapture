@@ -48,7 +48,7 @@ const int kKEY_ESC_CODE = 53;
 {
     NSLog(@"--space changed--%@", notify.userInfo);
     if (self.isWorking) {
-        [self endCapture:nil];
+        //[self endCapture:nil];
     }
 }
 
